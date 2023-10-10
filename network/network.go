@@ -52,7 +52,7 @@ func parseResponse(b []byte, offset *uint32) *model.Response {
 }
 
 func StartConnect() net.Conn {
-	conn, err := net.Dial("tcp", "127.0.0.1:9988")
+	conn, err := net.Dial("tcp", "192.168.0.20:9988")
 	if err != nil {
 		log.Fatal("dial Error: " + err.Error())
 		return nil
